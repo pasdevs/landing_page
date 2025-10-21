@@ -3,12 +3,14 @@ import { BrowserRouter, Route, Routes, Navigate} from 'react-router-dom'
 // import Home from '../src/pages/Home';
 // import Versi2 from './pages/Versi2';
 import LandingPage from './pages/LandingPage';
+import LandingPage2 from './pages/LandingPage2';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/landing_page" exact element={<LandingPage />} />
+        {/* <Route path="/landing_page" exact element={<LandingPage />} /> */}
+        <Route path="/landing_page" exact element={<LandingPage2 />} />
         <Route path="*" element={<Navigate replace to="/landing_page" />} />
       </Routes>
     </BrowserRouter>
