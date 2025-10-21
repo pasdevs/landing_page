@@ -1,0 +1,106 @@
+/* ===== Global Styles ===== */
+body {
+  background: linear-gradient(to bottom, #e6f8e0, #fff7eb);
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+/* ===== Container Utama ===== */
+.container {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* ===== Tombol Utama ===== */
+.btn-main {
+  background-color: #eb6a63;
+  color: white;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-main:hover {
+  background-color: #d85954;
+  transform: scale(1.03);
+  color: white;
+}
+
+/* ===== Card Custom ===== */
+.card-custom {
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  background: white;
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+/* ===== Fitur Kotak ===== */
+.feature-box {
+  background: white;
+  border-radius: 20px;
+  padding: 12px;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Testimoni ===== */
+.testimonial {
+  font-style: italic;
+  color: #555;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-top: 30px;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Responsiveness ===== */
+@media (max-width: 768px) {
+  .btn-main {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  .feature-box {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
